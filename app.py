@@ -11,8 +11,8 @@ from src.predict import predict_songs, FEATURE_COLUMNS, CLUSTER_LABELS
 
 load_dotenv()
 
-CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "6d322602fdf447bd9ff2e7ad6ea41a9d")
-CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET","e235bebea5a548469648bbe22678d7bb")
+CLIENT_ID = os.getenv("your spotify client id")
+CLIENT_SECRET = os.getenv("your spotify client secret")
 
 app = Flask(__name__, static_folder=".", static_url_path="")
 CORS(app)
